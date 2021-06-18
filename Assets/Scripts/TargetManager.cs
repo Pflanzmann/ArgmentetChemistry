@@ -24,7 +24,7 @@ public class TargetManager : MonoBehaviour {
         TargetsUpdated();
     }
 
-    private void TargetsUpdated() {
+    public void TargetsUpdated() {
         if(currentTargets.Count > 0) {
             QuizManager.Instance.OnCurrentTargetsChanged(new List<Target>(currentTargets));
         }

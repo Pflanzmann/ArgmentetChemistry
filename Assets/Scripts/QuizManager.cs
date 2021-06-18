@@ -1,10 +1,15 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = System.Random;
 
 public class QuizManager : MonoBehaviour {
     public static QuizManager Instance;
+
+    [SerializeField] private TMP_Text indexText;
+    [SerializeField] private TMP_Text titleText;
+    [SerializeField] private TMP_Text questionText;
 
     [SerializeField] private List<QuizQuestion> allQuestions;
 
@@ -39,7 +44,7 @@ public class QuizManager : MonoBehaviour {
         }
     }
 
-    private void AssignNewRandomQuestion() {
+    public void AssignNewRandomQuestion() {
         if(currentQuestionsList.Count == 0) {
             currentQuestionsList = new List<QuizQuestion>(allQuestions);
         }
@@ -49,5 +54,9 @@ public class QuizManager : MonoBehaviour {
 
         currentQuestion = currentQuestionsList[randomIndex];
         currentQuestionsList.Remove(currentQuestion);
+
+        titleText.text = currentQuestion.Title;
+        questionText.text = currentQuestion.Question;
+        indexText.text = (allQuestions.Count - currentQuestionsList.Count).ToString() + "/" + allQuestions.Count.ToString();
     }
 }
