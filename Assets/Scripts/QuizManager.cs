@@ -41,6 +41,8 @@ public class QuizManager : MonoBehaviour {
         if(targets.Count == 0) {
             print("we solved the quiz!!");
             AssignNewRandomQuestion();
+        } else {
+            print("Not fitting answers");
         }
     }
 
