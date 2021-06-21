@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Vuforia;
 
 public class TargetManager : MonoBehaviour {
     public static TargetManager Instance;
@@ -17,17 +16,24 @@ public class TargetManager : MonoBehaviour {
 
     public void OnTargetFound(Target target) {
         currentTargets.Add(target);
-        TargetsUpdated();
     }
 
     public void OnTargetLost(Target target) {
         currentTargets.Remove(target);
-        TargetsUpdated();
     }
 
-    public void TargetsUpdated() {
-        if(currentTargets.Count > 0) {
-            QuizManager.Instance.OnCurrentTargetsChanged(new List<Target>(currentTargets));
+    public void OnCollisionDetected(Target target) {
+        if(!target.TargetSeen) return;
+
+        var targets = new List<Target>();
+
+        foreach(var comparedTarget in currentTargets) {
+            if(comparedTarget != target && comparedTarget.TargetSeen &&
+               Vector2.Distance(comparedTarget.transform.position, target.transform.position) <= 1.5) {
+                targets.Add(comparedTarget);
+            }
         }
+
+        ComboManager.Instance.CheckCombinations(target, targets);
     }
 }

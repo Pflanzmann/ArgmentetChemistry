@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DefaultNamespace;
 using TMPro;
 using UnityEngine;
 using Random = System.Random;
@@ -16,6 +17,8 @@ public class QuizManager : MonoBehaviour {
     private List<QuizQuestion> currentQuestionsList = new List<QuizQuestion>();
     [SerializeField] private QuizQuestion currentQuestion;
 
+    public List<QuizQuestion> AllQuestions => allQuestions;
+
     private void Awake() {
         if(Instance == null) {
             Instance = this;
@@ -25,30 +28,23 @@ public class QuizManager : MonoBehaviour {
     }
 
     private void Start() {
+        foreach(var question in AllQuestions) {
+            question.requirements.Sort(Util.ComparisonByHashCode);
+        }
+
         AssignNewRandomQuestion();
     }
 
-    public void OnCurrentTargetsChanged(List<Target> targets) {
-        foreach(var requirement in currentQuestion.requirements) {
-            var foundTarget = targets.Find(target => target.ElementType == requirement);
-            if(foundTarget != null) {
-                targets.Remove(foundTarget);
-            } else {
-                print("Not fitting answers");
-            }
-        }
-
-        if(targets.Count == 0) {
-            print("we solved the quiz!!");
+    public void SubmitAnswer(QuizQuestion question) {
+        if(question == currentQuestion) {
+            print("----You solved it!!----");
             AssignNewRandomQuestion();
-        } else {
-            print("Not fitting answers");
         }
     }
 
     public void AssignNewRandomQuestion() {
         if(currentQuestionsList.Count == 0) {
-            currentQuestionsList = new List<QuizQuestion>(allQuestions);
+            currentQuestionsList = new List<QuizQuestion>(AllQuestions);
         }
 
         var random = new Random();
@@ -59,6 +55,6 @@ public class QuizManager : MonoBehaviour {
 
         titleText.text = currentQuestion.Title;
         questionText.text = currentQuestion.Question;
-        indexText.text = (allQuestions.Count - currentQuestionsList.Count).ToString() + "/" + allQuestions.Count.ToString();
+        indexText.text = (AllQuestions.Count - currentQuestionsList.Count) + "/" + AllQuestions.Count;
     }
 }

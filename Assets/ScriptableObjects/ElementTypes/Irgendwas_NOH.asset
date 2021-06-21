@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
-  m_Name: Wasserstoff_H
+  m_Name: Irgendwas_NOH
   m_EditorClassIdentifier: 
-  elementName: Wasserstoff
-  model: {fileID: 8908150732779250465, guid: 365f271ee9ac0554cbcd2112069158c5, type: 3}
+  elementName: Cooles element
+  model: {fileID: 2034765161200433824, guid: 5362aed601e0da1479e2981b8c6ea819, type: 3}
