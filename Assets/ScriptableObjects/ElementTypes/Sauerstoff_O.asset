@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sauerstoff_O
   m_EditorClassIdentifier: 
   elementName: Sauerstoff
-  model: {fileID: 8908150732779250465, guid: 365f271ee9ac0554cbcd2112069158c5, type: 3}
+  model: {fileID: 4822118070789204311, guid: c9128a4ebc80c444cb182502aaf0748c, type: 3}

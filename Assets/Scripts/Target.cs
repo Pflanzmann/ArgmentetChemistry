@@ -6,6 +6,7 @@ public class Target : MonoBehaviour {
     private ElementType currentElementType;
     private bool targetSeen = false;
     private GameObject currentModel;
+  
 
     public ElementType ElementType { get => currentElementType; set => currentElementType = value; }
 
@@ -46,6 +47,7 @@ public class Target : MonoBehaviour {
 
         if(currentElementType.Model == null) return;
         currentModel = Instantiate(elementType.Model, transform.position + (Vector3.up / 2), transform.rotation, transform);
+        GetComponent<ParticleSystem>().Play();
     }
 
     private void ResetTarget() {

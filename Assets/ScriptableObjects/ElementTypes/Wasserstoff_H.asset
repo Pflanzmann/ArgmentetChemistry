@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Wasserstoff_H
   m_EditorClassIdentifier: 
   elementName: Wasserstoff
-  model: {fileID: 8908150732779250465, guid: 365f271ee9ac0554cbcd2112069158c5, type: 3}
+  model: {fileID: 6771770297549027490, guid: 024d3e1525885364b847c12b9c6bd648, type: 3}

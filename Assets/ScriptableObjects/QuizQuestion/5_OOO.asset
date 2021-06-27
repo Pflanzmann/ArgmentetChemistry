@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bff17cc559f4586a4dd1fff8e72d1f8, type: 3}
+  m_Name: 5_OOO
+  m_EditorClassIdentifier: 
+  title: 
+  question: Stelle Ozon dar
+  resultType: {fileID: 11400000, guid: a45a984871db4994ba14f8cddd7bc03f, type: 2}
+  requirements:
+  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
+  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
+  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}

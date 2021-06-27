@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="stickstoff" size="1.000000 1.152964" />
-    <ImageTarget name="wasserstoff" size="1.000000 1.158700" />
-    <ImageTarget name="chlor" size="1.000000 1.153846" />
-    <ImageTarget name="kohlenstoff" size="1.000000 1.158700" />
-    <ImageTarget name="sauerstoff" size="1.000000 1.147228" />
+    <ImageTarget name="chlor1" size="1.000000 1.158700" />
+    <ImageTarget name="chlor2" size="1.000000 1.158700" />
+    <ImageTarget name="chlor3" size="1.000000 1.158700" />
+    <ImageTarget name="sauerstoff3" size="1.000000 1.158700" />
+    <ImageTarget name="sauerstoff2" size="1.000000 1.155894" />
+    <ImageTarget name="sauerstoff1" size="1.000000 1.158700" />
+    <ImageTarget name="kohlenstoff3" size="1.000000 1.158700" />
+    <ImageTarget name="kohlenstoff2" size="1.000000 1.159615" />
+    <ImageTarget name="kohlenstoff1" size="1.000000 1.152964" />
+    <ImageTarget name="wasserstoff3" size="1.000000 1.168260" />
+    <ImageTarget name="wasserstoff2" size="1.000000 1.165385" />
+    <ImageTarget name="wasserstoff1" size="1.000000 1.161597" />
+    <ImageTarget name="stickstoff3" size="1.000000 1.149338" />
+    <ImageTarget name="stickstoff2" size="1.000000 1.158700" />
+    <ImageTarget name="stickstoff1" size="1.000000 1.146388" />
   </Tracking>
 </QCARConfig>
