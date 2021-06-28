@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: NNO_Distickstoffmonoxid
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: Distickstoffmonoxid
   model: {fileID: 6217485132103332525, guid: 7142dbf6cae3551489770c0ee5199859, type: 3}

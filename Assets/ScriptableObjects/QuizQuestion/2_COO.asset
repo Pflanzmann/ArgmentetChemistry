@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2_COO
   m_EditorClassIdentifier: 
   title: 
-  question: Stelle ein Kohlenstoffdioxid dar
+  question: Stelle Kohlenstoffdioxid dar.
   resultType: {fileID: 11400000, guid: 73b2ab6455033e447b25cea4a8224ee9, type: 2}
   requirements:
   - {fileID: 11400000, guid: 99a115f96da1baf4e9b603b741b74dc3, type: 2}

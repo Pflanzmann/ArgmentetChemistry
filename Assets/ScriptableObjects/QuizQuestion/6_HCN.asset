@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 6_HCN
   m_EditorClassIdentifier: 
   title: 
-  question: "Stelle Blaus\xE4ure(cyanwasserstoff) dar"
+  question: "Stelle das hochgiftige Hydrogencyanid(Blaus\xE4ure, Zyklon B ) dar."
   resultType: {fileID: 11400000, guid: 4e56051af30377e44be89c968b1696cd, type: 2}
   requirements:
   - {fileID: 11400000, guid: 99a115f96da1baf4e9b603b741b74dc3, type: 2}
-  - {fileID: 11400000, guid: b3af13d11b372a348b2ff37424d2143d, type: 2}
   - {fileID: 11400000, guid: 699a541dd26fd6245974d0f2c4996396, type: 2}
+  - {fileID: 11400000, guid: b3af13d11b372a348b2ff37424d2143d, type: 2}

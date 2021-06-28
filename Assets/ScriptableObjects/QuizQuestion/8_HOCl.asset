@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 8_HOCl
   m_EditorClassIdentifier: 
   title: 
-  question: "Stelle Hypochlorige S\xE4ure dar"
+  question: "Stelle Chlors\xE4ure(Hypochlorige S\xE4ure) dar."
   resultType: {fileID: 11400000, guid: 338bd0685216c2f4cbfb2a0025fd41c5, type: 2}
   requirements:
-  - {fileID: 11400000, guid: f4db0cae3c7ae394f8abac48b9b38195, type: 2}
   - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
   - {fileID: 11400000, guid: b3af13d11b372a348b2ff37424d2143d, type: 2}
+  - {fileID: 11400000, guid: f4db0cae3c7ae394f8abac48b9b38195, type: 2}

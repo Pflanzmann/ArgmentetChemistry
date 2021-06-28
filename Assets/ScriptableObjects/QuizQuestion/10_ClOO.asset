@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 10_ClOO
   m_EditorClassIdentifier: 
   title: 
-  question: Stelle Chlordioxid dar
+  question: 'Stelle das giftige Gas Chlordioxid dar. '
   resultType: {fileID: 11400000, guid: 2d54c3d1af104834ca8a4a0f6336a7bd, type: 2}
   requirements:
+  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
+  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
   - {fileID: 11400000, guid: f4db0cae3c7ae394f8abac48b9b38195, type: 2}
-  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
-  - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}

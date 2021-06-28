@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: OOO_Ozon
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: Ozon
   model: {fileID: 4694881676343244591, guid: a7a760a54cb0e9d4f884a5b6ca4f1282, type: 3}

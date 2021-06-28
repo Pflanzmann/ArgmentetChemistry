@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 7_NNO
   m_EditorClassIdentifier: 
   title: 
-  question: Stelle Distickstoffmonoxid (lachgas) dar
+  question: Stelle Distickstoffmonoxid  dar, auch bekannt unter dem Namen Lachgas.
   resultType: {fileID: 11400000, guid: 36067aa5d4b3b4841b42838ccfd2f623, type: 2}
   requirements:
   - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}

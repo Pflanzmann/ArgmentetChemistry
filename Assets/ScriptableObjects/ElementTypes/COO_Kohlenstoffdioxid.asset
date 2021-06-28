@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: COO_Kohlenstoffdioxid
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: Kohlenstoffdioxid
   model: {fileID: 4688601633311484816, guid: a36ed24baeb0a8c4fb2022854e2a881f, type: 3}

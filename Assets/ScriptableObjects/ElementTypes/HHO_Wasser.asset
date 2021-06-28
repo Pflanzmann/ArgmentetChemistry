@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: HHO_Wasser
   m_EditorClassIdentifier: 
-  elementName: 
+  elementName: Diwasserstoffmonoxid
   model: {fileID: 2034611234119088281, guid: e9e7350ecbf0661478a5fc74bea98d9a, type: 3}

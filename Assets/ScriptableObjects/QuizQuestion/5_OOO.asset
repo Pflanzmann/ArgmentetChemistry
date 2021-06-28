@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5_OOO
   m_EditorClassIdentifier: 
   title: 
-  question: Stelle Ozon dar
+  question: Stelle Trioxygen(Ozon) dar.
   resultType: {fileID: 11400000, guid: a45a984871db4994ba14f8cddd7bc03f, type: 2}
   requirements:
   - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}

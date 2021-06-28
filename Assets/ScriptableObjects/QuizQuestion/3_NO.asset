@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3_NO
   m_EditorClassIdentifier: 
   title: 
-  question: Stelle ein Stickstoffoxid dar
+  question: Stelle Stickstoffoxid dar.
   resultType: {fileID: 11400000, guid: a17c6027e016d1e49a37d7eda3b4aeb3, type: 2}
   requirements:
   - {fileID: 11400000, guid: 2204b057847c5874f951417ad24f34e3, type: 2}
