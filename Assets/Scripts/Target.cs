@@ -44,8 +44,8 @@ public class Target : MonoBehaviour {
         if(correctResutl) {
             currentModel = Instantiate(comboPrefab, transform);
             var obj = Instantiate(elementType.Model, currentModel.transform);
-            obj.transform.localPosition = Vector3.forward * -4;
-            obj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            obj.transform.localPosition = Vector3.forward * -7;
+            obj.transform.localScale = new Vector3(2f, 2f, 2f);
             GetComponent<ParticleSystem>().Play();
             currentModel.GetComponentInChildren<TMP_Text>().text = elementType.ElementName;
         } else {
