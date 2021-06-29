@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: HCN_Blausaeure
   m_EditorClassIdentifier: 
-  elementName: ' Hydrogencyanid'
+  elementName: HCN Hydrogencyanid
   model: {fileID: 1409134070343768248, guid: 837457b5c6ef3be4a8bcb148e6d16dde, type: 3}

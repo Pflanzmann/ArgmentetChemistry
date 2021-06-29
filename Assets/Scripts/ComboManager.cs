@@ -7,6 +7,9 @@ using UnityEngine;
 public class ComboManager : MonoBehaviour {
     public static ComboManager Instance;
 
+    [SerializeField] private ElementType wrongElementTye;
+    [SerializeField] private ElementType emptyElementTye;
+
     private bool isCombinating = false;
 
     private void Awake() {
@@ -44,23 +47,29 @@ public class ComboManager : MonoBehaviour {
             foreach(var otherObject in otherObjects) {
                 if(Vector3.Distance(targetObject.transform.position, otherObject.transform.position) > 0.25) {
                     didMoveSomething = true;
-                    otherObject.transform.position += (targetObject.transform.position - otherObject.transform.position) * (Time.deltaTime * 5);
+                    otherObject.transform.position +=
+                        (targetObject.transform.position - otherObject.transform.position) * (Time.deltaTime * 5);
                 }
             }
 
             yield return new WaitForEndOfFrame();
         }
 
-        AssignCombination(target, otherTargets, question.ResultType);
-        QuizManager.Instance.SubmitAnswer(question);
+        var result = QuizManager.Instance.SubmitAnswer(question);
+        AssignCombination(target, otherTargets, question.ResultType, result);
+
         isCombinating = false;
     }
 
-    private void AssignCombination(Target mainTarget, List<Target> otherTargets, ElementType result) {
+    private void AssignCombination(Target mainTarget, List<Target> otherTargets, ElementType result, bool correctResult) {
         foreach(var target in otherTargets) {
-            target.SetEmptyModel();
+            target.SwapElement(emptyElementTye, false);
         }
 
-        mainTarget.SwapElement(result);
+        if(correctResult) {
+            mainTarget.SwapElement(result, true);
+        } else {
+            mainTarget.SwapElement(wrongElementTye, false);
+        }
     }
 }

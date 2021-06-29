@@ -1,12 +1,14 @@
 using System.Security.Cryptography;
+using TMPro;
 using UnityEngine;
 
 public class Target : MonoBehaviour {
+    [SerializeField] private GameObject comboPrefab;
     [SerializeField] private ElementType elementType;
     private ElementType currentElementType;
     private bool targetSeen = false;
     private GameObject currentModel;
-  
+
 
     public ElementType ElementType { get => currentElementType; set => currentElementType = value; }
 
@@ -30,15 +32,7 @@ public class Target : MonoBehaviour {
             TargetManager.Instance.OnCollisionDetected(this);
     }
 
-    public void SetEmptyModel() {
-        if(CurrentModel != null) {
-            Destroy(CurrentModel);
-        }
-
-        currentElementType = ScriptableObject.CreateInstance<ElementType>();
-    }
-
-    public void SwapElement(ElementType elementType) {
+    public void SwapElement(ElementType elementType, bool correctResutl) {
         if(CurrentModel != null) {
             Destroy(CurrentModel);
         }
@@ -46,14 +40,23 @@ public class Target : MonoBehaviour {
         currentElementType = elementType;
 
         if(currentElementType.Model == null) return;
-        currentModel = Instantiate(elementType.Model, transform.position + (Vector3.up / 2), transform.rotation, transform);
-        GetComponent<ParticleSystem>().Play();
+
+        if(correctResutl) {
+            currentModel = Instantiate(comboPrefab, transform);
+            var obj = Instantiate(elementType.Model, currentModel.transform);
+            obj.transform.localPosition = Vector3.forward * -4;
+            obj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            GetComponent<ParticleSystem>().Play();
+            currentModel.GetComponentInChildren<TMP_Text>().text = elementType.ElementName;
+        } else {
+            currentModel = Instantiate(elementType.Model, transform);
+        }
     }
 
     private void ResetTarget() {
         currentElementType = elementType;
         if(CurrentModel != elementType.Model)
             Destroy(CurrentModel);
-        currentModel = Instantiate(elementType.Model, transform.position + (Vector3.up / 2), transform.rotation, transform);
+        currentModel = Instantiate(elementType.Model, transform);
     }
 }

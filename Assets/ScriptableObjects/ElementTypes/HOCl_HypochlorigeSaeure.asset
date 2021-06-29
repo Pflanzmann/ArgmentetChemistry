@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: HOCl_HypochlorigeSaeure
   m_EditorClassIdentifier: 
-  elementName: "Chlors\xE4ure"
+  elementName: "HOCl Chlors\xE4ure"
   model: {fileID: 737044916223800943, guid: 86edbe7609dcea94daebc37259d8526d, type: 3}

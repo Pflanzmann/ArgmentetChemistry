@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: HCl_Chlorwasserstoff
   m_EditorClassIdentifier: 
-  elementName: Chlorwasserstoff
+  elementName: HCl Chlorwasserstoff
   model: {fileID: 6868057757062330995, guid: 255cf305c7856584a972eeeb2cbf4816, type: 3}

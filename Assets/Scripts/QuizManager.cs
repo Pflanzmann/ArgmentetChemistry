@@ -35,11 +35,11 @@ public class QuizManager : MonoBehaviour {
         AssignNewRandomQuestion();
     }
 
-    public void SubmitAnswer(QuizQuestion question) {
-        if(question == currentQuestion) {
-            print("----You solved it!!----");
-            AssignNewRandomQuestion();
-        }
+    public bool SubmitAnswer(QuizQuestion question) {
+        if(question != currentQuestion) return false;
+
+        AssignNewRandomQuestion();
+        return true;
     }
 
     public void AssignNewRandomQuestion() {

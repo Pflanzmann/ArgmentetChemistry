@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
   m_Name: ClOO_Chlordioxid
   m_EditorClassIdentifier: 
-  elementName: Chlordioxid
+  elementName: ClOO Chlordioxid
   model: {fileID: 4486360966858317189, guid: 5e4f327d591332747912559f84d6f0df, type: 3}

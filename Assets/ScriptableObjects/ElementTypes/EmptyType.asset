@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4909f6fb3d6c4b73aafaa2dec53cbd6c, type: 3}
-  m_Name: NO_Stickstoffoxid
+  m_Name: EmptyType
   m_EditorClassIdentifier: 
-  elementName: NO Stickstoffoxid
-  model: {fileID: 6634660913935693168, guid: 61f1a58949491344f86d0f8f3bcd7023, type: 3}
+  elementName: Empty
+  model: {fileID: 3167983538950532379, guid: eac8948a158b7e9428dcadb741bdac15, type: 3}
