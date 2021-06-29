@@ -53,7 +53,6 @@ public class QuizManager : MonoBehaviour {
         currentQuestion = currentQuestionsList[randomIndex];
         currentQuestionsList.Remove(currentQuestion);
 
-        titleText.text = currentQuestion.Title;
         questionText.text = currentQuestion.Question;
         indexText.text = (AllQuestions.Count - currentQuestionsList.Count) + "/" + AllQuestions.Count;
     }
